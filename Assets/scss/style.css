@@ -1,0 +1,182 @@
+/*  
+
+    Link Tree Design 
+
+    made by : Fasterdes (Fa Ainama Caldera S
+
+    Version 1.0
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*::after,
+* ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 93vh;
+  letter-spacing: 0.4px;
+}
+
+h1,
+h3,
+p,
+ul {
+  font: inherit 100%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.box {
+  top: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 360px;
+  width: calc(100% - 2rem);
+  margin-top: auto;
+  background: #fff;
+  -webkit-box-shadow: 0px 12px 33px 1px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 12px 33px 1px rgba(0, 0, 0, 0.06);
+  border-radius: 23px;
+  padding: 23px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 576px) and (min-width: 0) {
+  .box {
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+.box .container {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.box .container .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box .container .logo .logo-title {
+  display: -ms-grid;
+  display: grid;
+  gap: 12px;
+}
+
+.box .container .logo .logo-title h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.box .container .logo .logo-title p {
+  opacity: 65%;
+}
+
+.box .container .logo .img-logo {
+  width: 100px;
+  border-radius: 13px;
+}
+
+.box .list-box {
+  background: #fff;
+  -webkit-box-shadow: 0px 12px 33px 1px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 12px 33px 1px rgba(0, 0, 0, 0.06);
+  border-radius: 23px;
+  padding: 23px;
+  margin-bottom: 1rem;
+  height: 400px;
+}
+
+.box .list-box .list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box .list-box .list-container .link-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 23px;
+  background-color: #181431;
+}
+
+.box .list-box .list-link-box {
+  margin-top: 3rem;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+}
+
+.box .list-box .list-link-box a {
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 23px;
+  background-color: #181431;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+}
+
+.box .list-box .list-link-box a:hover {
+  background-color: #fff;
+  border: 2px solid #181431;
+  border-radius: 23px;
+  color: #181431;
+}
+
+.box .copyright {
+  line-height: 22px;
+  font-size: 0.875rem;
+  opacity: 65%;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

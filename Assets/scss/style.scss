@@ -1,0 +1,206 @@
+/*  
+
+    Link Tree Design 
+
+    made by : Fasterdes (Fa Ainama Caldera S
+
+    Version 1.0
+*/
+
+
+// COLOR UTILITIES
+$bg-primary: #fff;
+$font-color: #181431;
+
+
+// FONT SIZE UTILITIES
+$heading-font: 1.5rem;
+$sub-font: 1.125rem;
+$paragraph-font: 0.875rem;
+$body-font: 1rem;
+
+
+// MARGINES UTILITIES
+$mb-1: .5rem;
+$mb-2: 1rem;
+$mb-3: 1.5rem;
+$mb-4: 2rem;
+$mb-5: 2.5rem;
+$mb-6: 3rem;
+
+
+
+// MIXIN LAYOUT CONTAINER
+
+@mixin bd-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
+    width: calc(100% - 2rem);
+    margin-top: auto;
+}
+
+@mixin bd-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+
+// RESET CSS
+* {
+    margin: 0;
+    padding: 0;
+
+
+    &::after,
+    ::before {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: $body-font;
+    display: flex;
+    align-items: center;
+    height: 93vh;
+    letter-spacing: 0.4px;
+}
+
+h1,
+h3,
+p,
+ul {
+    font: inherit 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+// BOX and CONTAINER SCSS
+
+.box {
+    top: 0;
+    left: 0;
+    @include bd-container;
+    background: $bg-primary;
+    box-shadow: 0px 12px 33px 1px rgba(0, 0, 0, 0.06);
+    border-radius: 23px;
+    padding: 23px;
+    font-family: 'Open Sans', sans-serif;
+
+    @media (max-width: 576px) and (min-width: 0){
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+
+
+    .container {
+        @include bd-grid;
+
+        .logo {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .logo-title {
+                display: grid;
+                gap: 12px;
+
+                h3 {
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                }
+
+                p {
+                    opacity: 65%;
+                }
+            }
+
+            .img-logo {
+                width: 100px;
+                border-radius: 13px;
+            }
+        }
+
+        
+    }
+
+
+    .list-box {
+        background: $bg-primary;
+        box-shadow: 0px 12px 33px 1px rgba(0, 0, 0, 0.06);
+        border-radius: 23px;
+        padding: 23px;
+        margin-bottom: $mb-2;
+        height: 400px;
+
+        .list-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            .link-title {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: $paragraph-font;
+                color: $bg-primary;
+                padding: 0.5rem 1.5rem;
+                border-radius: 23px;
+                background-color: $font-color;
+            }
+        }
+
+        .list-link-box {
+            margin-top: 3rem;
+            text-align: center;
+            display: grid;
+
+            a{
+                margin-bottom: 2rem;
+                font-size: $paragraph-font;
+                padding: 0.5rem 1.5rem;
+                border-radius: 23px;
+                background-color: $font-color;
+                cursor: pointer;
+                color: $bg-primary;
+                font-weight: bold;
+
+
+                &:hover{
+                    background-color: $bg-primary;
+                    border: 2px solid $font-color;
+                    border-radius: 23px;
+                    color: $font-color;
+                }
+            }
+
+            
+        }
+    }
+
+    .copyright{
+
+        line-height: 22px;
+        font-size: $paragraph-font;
+        opacity: 65%;
+        text-align: center;
+    }
+}
